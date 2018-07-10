@@ -16,9 +16,6 @@ function ZilkhaAppliance(name) {
             this.power = get_appliance_power(this.name);
             this.ref = 0;
             if (this.power > 0) {
-              //console.log('draw call');
-              //pinwheelDraw();
-              console.log('do something');
 
               this.running = true;
             }
