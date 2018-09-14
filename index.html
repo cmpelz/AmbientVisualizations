@@ -3,11 +3,40 @@
 <html>
   <head>
     <title>Ambient Visualizations</title>
+    <style>
+    body {
+    background-color: rgb(180,180,180);
+    }
+    </style>
   </head>
+
   <body>
-    <p><a href="simulation/"> Go to simulations </p>
-    <p><a href="visualizations"> Go to Zilkha Center ambient visualizations </p>
-  </body>
 
+    <canvas id="canvas" width="700" height="250" style="background-color:white"></canvas>
+    <script src="../../scripts/all/paths.js" type="text/javascript"></script>
+    <script>
+      console.log(KITCHEN_IMAGES_PATH);
+    </script>
+    <script src="../../scripts/pinwheels/pinwheels.js" type="text/javascript"></script>
+    <script src="../../scripts/all/main.js" type="text/javascript"></script>
+    <script src="../../scripts/simulation/simulation.js" type="text/javascript"></script>
+    <script src="../../scripts/simulation/kitchen.js" type="text/javascript"></script>
+    <script src="../../scripts/simulation/init_pinwheels_simulation.js" type="text/javascript"></script>
+    <p id="pic"></p>
+    <table style="margin:auto">
+    <center style = "font-family:'Verdana','Sans-serif';font-size:25px;"> Welcome to the Kitchen Simulator! </center>
+    <tr>
+      <center style = "font-family:'Verdana','Sans-serif';font-size:15px;" id = "instructions">
+      Click the light to start cooking </center>
+    </tr>
+    <tr>
+      <center style = "font-family:'Verdana','Sans-serif';font-size:15px;" id = "wrong"> </center>
+    </tr>
+      <tr>
+        <td> <img src = "http://sysnet.cs.williams.edu/~19am24/AVCooking/Spring-2018/images/cooking/start.png" id = "cooking" height = "260px" width = "229" style = "vertical-align:bottom; padding-right:25px;display:hidden"> </td>
+        <td>  <script> insertImg( KITCHEN_IMAGES_PATH + "kitchen_2_all_off.jpg", "pic", "620", "408" ) </script> </td>
+    </tr>
+    </table>
+   </body>
 
-</html> 
+  </html>
